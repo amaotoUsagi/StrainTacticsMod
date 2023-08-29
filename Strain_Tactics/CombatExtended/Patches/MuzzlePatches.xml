@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Muzzle Flash</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+        
+      <!-- Pistol -->
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_P2Compact"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_Pistol</def>
+					<drawSize>(2.0,2.0)</drawSize>
+					<offsets>
+						<li>(-0.35,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+      <!-- Shotgun -->
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_ShotgunChucky"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_Shotgun</def>
+					<drawSize>(2.0,2.0)</drawSize>
+					<offsets>
+						<li>(0.5,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_ShotgunStumpy"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_Shotgun</def>
+					<drawSize>(2.0,2.0)</drawSize>
+					<offsets>
+						<li>(0.3,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_ShotgunOutranger"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_Suppressed</def>
+					<drawSize>(2.0,2.0)</drawSize>
+					<offsets>
+						<li>(0,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+      <!-- SMG -->
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_SAP"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_SMG</def>
+					<drawSize>(2.0,2.0)</drawSize>
+					<offsets>
+						<li>(-0.2,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_SAPC"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_SMG</def>
+					<drawSize>(2.0,2.0)</drawSize>
+					<offsets>
+						<li>(-0.2,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_SAPSOPMOD"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_Suppressed</def>
+					<drawSize>(2.0,2.0)</drawSize>
+					<offsets>
+						<li>(0,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+      <!-- LCR -->
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_LCR"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_AR</def>
+					<drawSize>(1.5,1.5)</drawSize>
+					<offsets>
+						<li>(-0.05,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_LCRBandit"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_AR</def>
+					<drawSize>(1.5,1.5)</drawSize>
+					<offsets>
+						<li>(-0.05,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_LCRE"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_AR</def>
+					<drawSize>(1.0,1.0)</drawSize>
+					<offsets>
+						<li>(0.25,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+      <!-- MAR -->
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_MAR"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_AR</def>
+					<drawSize>(1.75,1.5)</drawSize>
+					<offsets>
+						<li>(0.05,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_MARC"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_AR</def>
+					<drawSize>(1.75,1.5)</drawSize>
+					<offsets>
+						<li>(0.05,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_MARDMR"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_AR</def>
+					<drawSize>(1.7,1.5)</drawSize>
+					<offsets>
+						<li>(0.35,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+      <!-- Heavy Weapons -->
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_HeavyBattleRifle"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_HR</def>
+					<drawSize>(2.5,2.5)</drawSize>
+					<offsets>
+						<li>(0.2,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_HMGSAW"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_HR</def>
+					<drawSize>(2.5,2.5)</drawSize>
+					<offsets>
+						<li>(0.1,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_HAMRMonsterKiller"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_HAMR</def>
+					<drawSize>(3.0,3.0)</drawSize>
+					<offsets>
+						<li>(0.4,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_Minigun"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_Minigun</def>
+					<drawSize>(1.5,1.0)</drawSize>
+					<offsets>
+						<li>(0.2,-0.2)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_Railgun"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_HAMR</def>
+					<drawSize>(3.0,3.0)</drawSize>
+					<offsets>
+						<li>(0.3,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+      <!-- Experimental -->
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_P2X"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_EXPistol</def>
+					<drawSize>(1.5,1.5)</drawSize>
+					<offsets>
+						<li>(0.1,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_ShotgunOutrangerX"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_EXShotgun</def>
+					<drawSize>(1.5,1.5)</drawSize>
+					<offsets>
+						<li>(0.6,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_XMAR"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_EXAR</def>
+					<drawSize>(2.0,2.0)</drawSize>
+					<offsets>
+						<li>(0,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_XHMGSAW"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_EXHR</def>
+					<drawSize>(2.5,2.5)</drawSize>
+					<offsets>
+						<li>(0.1,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="Strain_XHAMR"]</xpath>
+			<value>
+				<li Class="MuzzleFlash.MuzzleFlashProps">
+					<def>MF_ST_EXHAMR</def>
+					<drawSize>(3.0,3.0)</drawSize>
+					<offsets>
+						<li>(0.4,0)</li>
+					</offsets>
+				</li>
+			</value>
+        </li>
+
+        </operations>
+    </match>
+    </Operation>
+</Patch>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Strain Tactics - Weapons</name>
+    <author>amaoto</author>
+    <url>https://steamcommunity.com/sharedfiles/filedetails/?id=2954424259</url>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+    <packageId>amaoto.StrainTacticsWeapons</packageId>
+    <description>Adds Weapons from the game Strain Tactics.\n It was originally made for combat extended. Its no longer a requirement, but would have a few reductions in content.\n Supports Muzzle Flash</description>
+    <modDependencies>
+    </modDependencies>
+    <loadBefore>
+    </loadBefore>
+    <loadAfter>
+        <li>CETeam.CombatExtended</li>
+    </loadAfter>
+</ModMetaData>

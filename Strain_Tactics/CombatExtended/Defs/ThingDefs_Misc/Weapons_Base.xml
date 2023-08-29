@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- =============================================== -->
+  <!-- ==================== Bases ==================== -->
+  <!-- =============================================== -->
+
+    <ThingDef Name="Strain_BaseMeleeWeapon" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <drawerType>MapMeshOnly</drawerType>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <altitudeLayer>Item</altitudeLayer>
+        <alwaysHaulable>true</alwaysHaulable>
+        <tickerType>Never</tickerType>
+        <equipmentType>Primary</equipmentType>
+        <useHitPoints>true</useHitPoints>
+        <pathCost>14</pathCost>
+        <selectable>true</selectable>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <Beauty>-3</Beauty>
+            <SellPriceFactor>0.20</SellPriceFactor>
+        </statBases>
+        <relicChance>0</relicChance>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+                <li>
+                    <compClass>CompEquippable</compClass>
+                </li>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtWeaponMelee</nameMaker>
+                <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+                <minQualityForArtistic>Excellent</minQualityForArtistic>
+            </li>
+            <li Class="CompProperties_Styleable"></li>
+        </comps>
+        <graphicData>
+            <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+        </graphicData>
+        <techLevel>Industrial</techLevel>
+        <smeltable>true</smeltable>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <inspectorTabs>
+            <li>ITab_Art</li>
+        </inspectorTabs>
+        <allowedArchonexusCount>1</allowedArchonexusCount>
+        <thingCategories Inherit="False">
+            <li>Strain_Category_MeleeWeapons</li>
+        </thingCategories>
+    </ThingDef>
+    
+    <ThingDef Name="Strain_MakeableMelee" ParentName="Strain_BaseMeleeWeapon" Abstract="True">
+        <tradeTags>
+            <li>WeaponMelee</li>
+        </tradeTags>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
+    
+    <ThingDef Name="Strain_MakeableRanged" ParentName="BaseHumanMakeableGun" Abstract="True">
+        <thingCategories Inherit="False">
+            <li>Strain_Category_RangedWeapons</li>
+        </thingCategories>
+        <recipeMaker Inherit="False">
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+            <researchPrerequisite>ST_weapons</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+    
+    <ThingDef Name="Strain_MakeableRangedAdvanced" ParentName="BaseHumanMakeableGun" Abstract="True">
+        <thingCategories Inherit="False">
+            <li>Strain_Category_RangedWeapons</li>
+        </thingCategories>
+        <recipeMaker Inherit="False">
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+            <researchPrerequisites>
+                <li>ST_weapons</li>
+                <li>ChargedShot</li>
+            </researchPrerequisites>
+        </recipeMaker>
+    </ThingDef>
+
+</Defs>

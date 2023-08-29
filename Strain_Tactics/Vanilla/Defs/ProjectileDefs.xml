@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== Projectiles ==================== -->
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainPistol</defName>
+        <label>pistol bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <speed>55</speed>
+            <stoppingPower>1.5</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainSMG</defName>
+        <label>SMG bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>7</damageAmountBase>
+            <speed>55</speed>
+            <stoppingPower>1.5</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainSMGSuppressed</defName>
+        <label>SMG bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <speed>80</speed>
+            <stoppingPower>0</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainShotgun</defName>
+        <label>Shotgun buckshot</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <speed>55</speed>
+            <armorPenetrationBase>0.16</armorPenetrationBase>
+            <stoppingPower>6</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainShotgunSlug</defName>
+        <label>Shotgun Slug</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>30</damageAmountBase>
+            <speed>70</speed>
+            <stoppingPower>0</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainLCR</defName>
+        <label>LCR bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>12</damageAmountBase>
+            <speed>70</speed>
+            <stoppingPower>1</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainLCRE</defName>
+        <label>LCR-E Bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>16</damageAmountBase>
+            <speed>80</speed>
+            <stoppingPower>0</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainMAR</defName>
+        <label>MAR bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>12</damageAmountBase>
+            <speed>70</speed>
+            <armorPenetrationBase>0.24</armorPenetrationBase>
+            <stoppingPower>1.2</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainMARDMR</defName>
+        <label>MAR4 Bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>16</damageAmountBase>
+            <speed>80</speed>
+            <armorPenetrationBase>0.40</armorPenetrationBase>
+            <stoppingPower>0</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainHBR</defName>
+        <label>HBR Bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+            <speed>100</speed>
+            <armorPenetrationBase>0.50</armorPenetrationBase>
+            <stoppingPower>2</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainHMG</defName>
+        <label>HMG60 Bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>16</damageAmountBase>
+            <speed>100</speed>
+            <armorPenetrationBase>0.50</armorPenetrationBase>
+            <stoppingPower>1.5</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainHAMR</defName>
+        <label>Monster Killer Bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>40</damageAmountBase>
+            <speed>120</speed>
+            <armorPenetrationBase>0.80</armorPenetrationBase>
+            <stoppingPower>3</stoppingPower>
+            <extraDamages>
+                <li>
+                    <def>Bomb</def>
+                    <amount>20</amount>
+                </li>
+            </extraDamages>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainRPG</defName>
+        <label>RPG Rocket</label>
+        <graphicData>
+            <texPath>Things/Projectiles/Proj_StrainRPG</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>BombSuper</damageDef>
+            <damageAmountBase>120</damageAmountBase>
+            <explosionRadius>3.9</explosionRadius>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainPistolExperimental</defName>
+        <label>pistol bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <armorPenetrationBase>0.25</armorPenetrationBase>
+            <speed>55</speed>
+            <stoppingPower>1.5</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainShotgunSlugExperimental</defName>
+        <label>Shotgun Slug</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>30</damageAmountBase>
+            <armorPenetrationBase>0.75</armorPenetrationBase>
+            <speed>70</speed>
+            <stoppingPower>3</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainMARExperimental</defName>
+        <label>MAR bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>12</damageAmountBase>
+            <armorPenetrationBase>30</armorPenetrationBase>
+            <speed>70</speed>
+            <stoppingPower>1.2</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainHMGExperimental</defName>
+        <label>HMG60 Bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>16</damageAmountBase>
+            <armorPenetrationBase>0.60</armorPenetrationBase>
+            <speed>100</speed>
+            <stoppingPower>1.5</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StrainHAMRExperimental</defName>
+        <label>Hunter Killer Bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>40</damageAmountBase>
+            <armorPenetrationBase>1.0</armorPenetrationBase>
+            <speed>120</speed>
+            <stoppingPower>3</stoppingPower>
+            <extraDamages>
+                <li>
+                    <def>Bomb</def>
+                    <amount>20</amount>
+                </li>
+            </extraDamages>
+        </projectile>
+    </ThingDef>
+
+</Defs>

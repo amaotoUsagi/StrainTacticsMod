@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>Strain_ATMineItem</defName>
+        <label>AT Mine</label>
+        <description>A High-explosive incendiary mine. For Anti-tank use. Or monsters.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Explosive_Mine_Item</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>25</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>40</MaxHitPoints>
+            <MarketValue>61.94</MarketValue>
+            <Mass>4</Mass>
+            <Flammability>0.5</Flammability>
+            <DeteriorationRate>0.0</DeteriorationRate>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <costList>
+            <Steel>130</Steel>
+            <Chemfuel>280</Chemfuel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <productCount>5</productCount>
+            <workAmount>11600</workAmount>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+            <researchPrerequisite>ST_Mines</researchPrerequisite>
+        </recipeMaker>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.9</explosiveRadius>
+                <explosiveDamageType>BombSuper</explosiveDamageType>
+                <damageAmountBase>503</damageAmountBase>
+                <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                <explodeOnKilled>True</explodeOnKilled>
+                <wickTicks>30~60</wickTicks>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>Strain_ATMine</defName>
+        <label>Anti-tank Mine</label>
+        <description>A High-explosive incendiary mine. For Anti-tank use. Or monsters.</description>
+        <uiIconPath>Things/Weapons/Explosive_Mine_Itema</uiIconPath>
+        <graphicData>
+            <texPath>Things/Weapons/Explosive_Mine_Active</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingClass>Building_TrapExplosive</thingClass>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <rotatable>false</rotatable>
+        <tickerType>Normal</tickerType>
+        <stealable>false</stealable>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <pathCost>0</pathCost>
+        <canOverlapZones>true</canOverlapZones>
+        <repairEffect>ConstructDirt</repairEffect>
+        <constructEffect>ConstructDirt</constructEffect>
+        <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+        <statBases>
+        <Mass>4</Mass>
+            <MaxHitPoints>40</MaxHitPoints>
+            <MarketValue>61.94</MarketValue>
+            <WorkToBuild>1250</WorkToBuild> <!-- approx 30 min in-game time-->
+            <Flammability>0</Flammability>
+            <Beauty>-4</Beauty>
+            <TrapSpringChance>10.0</TrapSpringChance>
+        </statBases>
+        <costList>
+            <Strain_ATMineItem>1</Strain_ATMineItem>
+        </costList>
+        <designationCategory>Security</designationCategory>
+        <building>
+            <isTrap>true</isTrap>
+            <trapPeacefulWildAnimalsSpringChanceFactor>10.0</trapPeacefulWildAnimalsSpringChanceFactor>
+            <expandHomeArea>false</expandHomeArea>
+            <ai_chillDestination>false</ai_chillDestination>
+            <sowTag>SupportPlantsOnly</sowTag>
+            <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+        </building>
+        <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>ST_Mines</li>
+        </researchPrerequisites>
+        <placeWorkers>
+            <li>PlaceWorker_NeverAdjacentTrap</li>
+        </placeWorkers>
+        <resourcesFractionWhenDeconstructed>1.00</resourcesFractionWhenDeconstructed>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.9</explosiveRadius>
+                <explosiveDamageType>BombSuper</explosiveDamageType>
+                <damageAmountBase>503</damageAmountBase>
+                <wickTicks>0</wickTicks>
+                <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>0.67</preExplosionSpawnChance>
+                <explosionSound>Explosion_StrainHEI</explosionSound>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

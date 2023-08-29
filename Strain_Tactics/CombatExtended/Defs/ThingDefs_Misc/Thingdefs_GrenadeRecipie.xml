@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>ST_Make_Promethiumtank</defName>
+    <label>Fill a promethium tank</label>
+    <description>Craft a promethim tank.</description>
+    <jobString>Making Promethium tank</jobString>
+    <workAmount>600</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Prometheum</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Prometheum</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Strain_Gastank>1</Strain_Gastank>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>ST_Make_Dawnbreaker</defName>
+    <label>Assemble a Tactical Antigrain Bomb "Dawnbreaker"</label>
+    <description>Craft a Dawnbreaker bomb.</description>
+    <jobString>Making Dawnbreaker bomb</jobString>
+    <workAmount>5000</workAmount>
+    <researchPrerequisite>Fabrication</researchPrerequisite>
+	<recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Shell_AntigrainWarhead</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Shell_AntigrainWarhead</li>
+		<li>Uranium</li>
+		<li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Strain_DawnBreaker>1</Strain_DawnBreaker>
+    </products>
+  </RecipeDef>
+  
+  </Defs>

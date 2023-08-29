@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>Strain_tac_research</defName>
+		<label>Strain Tactics</label>
+	</ResearchTabDef>
+
+</Defs>

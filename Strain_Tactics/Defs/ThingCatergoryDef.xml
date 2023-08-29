@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== For my Sorting Needs ==================== -->
+  
+    <ThingCategoryDef>
+    	<defName>Strain_Category_RangedWeapons</defName>
+    	<label>Strain Tactics</label>
+    	<parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+  
+    <ThingCategoryDef>
+    	<defName>Strain_Category_MeleeWeapons</defName>
+    	<label>Strain Tactics</label>
+	    <parent>WeaponsMelee</parent>
+    </ThingCategoryDef>
+    
+</Defs>

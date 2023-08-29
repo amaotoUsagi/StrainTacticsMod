@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== Dawnbreaker ========================== -->
+
+    <ThingDef ParentName="BaseGrenadeProjectile">
+        <defName>Proj_StrainDawnBreaker</defName>
+        <label>Dawn Breaker</label>
+        <graphicData>
+            <texPath>Things/Projectiles/Proj_Dawnbreaker</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>BombSuper</damageDef>
+            <damageAmountBase>1600</damageAmountBase>
+            <explosionRadius>75</explosionRadius>
+            <speed>5</speed>
+            <arcHeightFactor>4</arcHeightFactor>
+            <explosionDelay>2500</explosionDelay>
+            <explosionChanceToStartFire>0.22</explosionChanceToStartFire>
+            <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+            <explosionEffect>GiantExplosion</explosionEffect>
+            <soundExplode>Explosion_GiantBomb</soundExplode>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeapon">
+        <defName>Strain_DawnBreaker</defName>
+        <equipmentType>Primary</equipmentType>
+        <label>Tactical Antigrain Bomb</label>
+        <description>"Dawn Breakers" destroy everything in a large area. Once activated, you have one hour(in-game) before it explodes.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Explosive_Dawnbreaker_Inactive</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <stackLimit>1</stackLimit>
+        <statBases>
+            <Mass>63</Mass>
+            <MarketValue>9000</MarketValue>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+        </statBases>
+        <thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+        <verbs>
+            <li>
+                <label>activate dawn breaker</label>
+                <verbClass>Verb_ShootOneUse</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <range>10</range>
+                <warmupTime>1.8</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+                <soundCast>ThrowGrenade</soundCast>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <defaultProjectile>Proj_StrainDawnBreaker</defaultProjectile>
+                <forcedMissRadius>0.1</forcedMissRadius>
+                <onlyManualCast>true</onlyManualCast>
+                <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+            </li>
+        </verbs>
+    </ThingDef>
+
+</Defs>

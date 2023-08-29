@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Muzzle Flash</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+            <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+                <MuzzleFlash.MuzzleFlashDef>
+                    <defName>MF_ST_Suppressed</defName>
+                    <texture>FX/MuzzleFlash/Pistol_FX</texture>
+                    <defaultSize>(1,1)</defaultSize>
+                    <splits>(3,1)</splits>
+                    <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+                    <duration>5</duration>
+                    <framesPerAnimation>5</framesPerAnimation>
+                    <lightIntensity>0.4</lightIntensity>
+                </MuzzleFlash.MuzzleFlashDef>
+            
+                <MuzzleFlash.MuzzleFlashDef>
+                    <defName>MF_ST_Pistol</defName>
+                    <texture>FX/MuzzleFlash/Pistol_FX</texture>
+                    <defaultSize>(1,1)</defaultSize>
+                    <splits>(3,1)</splits>
+                    <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+                    <duration>5</duration>
+                    <framesPerAnimation>5</framesPerAnimation>
+                    <lightIntensity>1.0</lightIntensity>
+                </MuzzleFlash.MuzzleFlashDef>
+
+                <MuzzleFlash.MuzzleFlashDef>
+                    <defName>MF_ST_SMG</defName>
+                    <texture>FX/MuzzleFlash/SMG_FX</texture>
+                    <defaultSize>(1,1)</defaultSize>
+                    <splits>(3,1)</splits>
+                    <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+                    <duration>5</duration>
+                    <framesPerAnimation>5</framesPerAnimation>
+                    <lightIntensity>1.2</lightIntensity>
+                </MuzzleFlash.MuzzleFlashDef>
+            
+                <MuzzleFlash.MuzzleFlashDef>
+                    <defName>MF_ST_Shotgun</defName>
+                    <texture>FX/MuzzleFlash/Shotgun_FX</texture>
+                    <defaultSize>(1,1)</defaultSize>
+                    <splits>(3,1)</splits>
+                    <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+                    <duration>5</duration>
+                    <framesPerAnimation>5</framesPerAnimation>
+                    <lightIntensity>1.6</lightIntensity>
+                </MuzzleFlash.MuzzleFlashDef>
+            
+                <MuzzleFlash.MuzzleFlashDef>
+                    <defName>MF_ST_Shotgun</defName>
+                    <texture>FX/MuzzleFlash/Shotgun_FX</texture>
+                    <defaultSize>(1,1)</defaultSize>
+                    <splits>(3,1)</splits>
+                    <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+                    <duration>5</duration>
+                    <framesPerAnimation>5</framesPerAnimation>
+                    <lightIntensity>1.6</lightIntensity>
+                </MuzzleFlash.MuzzleFlashDef>
+                
+                <MuzzleFlash.MuzzleFlashDef>
+                    <defName>MF_ST_AR</defName>
+                    <texture>FX/MuzzleFlash/AR_FX</texture>
+                    <defaultSize>(1,1)</defaultSize>
+                    <splits>(3,1)</splits>
+                    <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+                    <duration>5</duration>
+                    <framesPerAnimation>5</framesPerAnimation>
+                    <lightIntensity>1.4</lightIntensity>
+                </MuzzleFlash.MuzzleFlashDef>
+                
+                <MuzzleFlash.MuzzleFlashDef>
+                    <defName>MF_ST_HR</defName>
+                    <texture>FX/MuzzleFlash/HR_FX</texture>
+                    <defaultSize>(1,1)</defaultSize>
+                    <splits>(3,1)</splits>
+                    <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+                    <duration>5</duration>
+                    <framesPerAnimation>5</framesPerAnimation>
+                    <lightIntensity>1.6</lightIntensity>
+                </MuzzleFlash.MuzzleFlashDef>
+                
+                <MuzzleFlash.MuzzleFlashDef>
+                    <defName>MF_ST_HAMR</defName>
+                    <texture>FX/MuzzleFlash/HAMR_FX</texture>
+                    <defaultSize>(1,1)</defaultSize>
+                    <splits>(4,1)</splits>
+                    <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+                    <duration>10</duration>
+                    <framesPerAnimation>5</framesPerAnimation>
+                    <lightIntensity>1.6</lightIntensity>
+                </MuzzleFlash.MuzzleFlashDef>
+                
+                <MuzzleFlash.MuzzleFlashDef>
+                    <defName>MF_ST_Minigun</defName>
+                    <texture>FX/MuzzleFlash/Minigun_FX</texture>
+                    <defaultSize>(1,1)</defaultSize>
+                    <splits>(3,1)</splits>
+                    <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+                    <duration>3</duration>
+                    <framesPerAnimation>5</framesPerAnimation>
+                    <lightIntensity>1.6</lightIntensity>
+                </MuzzleFlash.MuzzleFlashDef>
+                
+                <MuzzleFlash.MuzzleFlashDef>
+                    <defName>MF_ST_EXPistol</defName>
+                    <texture>FX/MuzzleFlash/PistolX_FX</texture>
+                    <defaultSize>(1,1)</defaultSize>
+                    <splits>(3,1)</splits>
+                    <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+                    <duration>5</duration>
+                    <framesPerAnimation>5</framesPerAnimation>
+                    <lightIntensity>1.1</lightIntensity>
+                </MuzzleFlash.MuzzleFlashDef>
+                
+                <MuzzleFlash.MuzzleFlashDef>
+                    <defName>MF_ST_EXShotgun</defName>
+                    <texture>FX/MuzzleFlash/ShotgunX_FX</texture>
+                    <defaultSize>(1,1)</defaultSize>
+                    <splits>(3,1)</splits>
+                    <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+                    <duration>5</duration>
+                    <framesPerAnimation>5</framesPerAnimation>
+                    <lightIntensity>1.7</lightIntensity>
+                </MuzzleFlash.MuzzleFlashDef>
+                
+                <MuzzleFlash.MuzzleFlashDef>
+                    <defName>MF_ST_EXAR</defName>
+                    <texture>FX/MuzzleFlash/ARX_FX</texture>
+                    <defaultSize>(1,1)</defaultSize>
+                    <splits>(3,1)</splits>
+                    <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+                    <duration>5</duration>
+                    <framesPerAnimation>5</framesPerAnimation>
+                    <lightIntensity>1.3</lightIntensity>
+                </MuzzleFlash.MuzzleFlashDef>
+                
+                <MuzzleFlash.MuzzleFlashDef>
+                    <defName>MF_ST_EXHR</defName>
+                    <texture>FX/MuzzleFlash/HRX_FX</texture>
+                    <defaultSize>(1,1)</defaultSize>
+                    <splits>(3,1)</splits>
+                    <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+                    <duration>5</duration>
+                    <framesPerAnimation>5</framesPerAnimation>
+                    <lightIntensity>1.7</lightIntensity>
+                </MuzzleFlash.MuzzleFlashDef>
+                
+                <MuzzleFlash.MuzzleFlashDef>
+                    <defName>MF_ST_EXHAMR</defName>
+                    <texture>FX/MuzzleFlash/XAMR_FX</texture>
+                    <defaultSize>(1,1)</defaultSize>
+                    <splits>(4,1)</splits>
+                    <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+                    <duration>10</duration>
+                    <framesPerAnimation>5</framesPerAnimation>
+                    <lightIntensity>1.9</lightIntensity>
+                </MuzzleFlash.MuzzleFlashDef>
+            </value>
+            </li>
+        </operations>
+    </match>
+    </Operation>
+</Patch>
